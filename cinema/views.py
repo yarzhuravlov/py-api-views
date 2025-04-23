@@ -1,7 +1,6 @@
-from rest_framework.decorators import api_view
+from rest_framework import status, views, generics, mixins, viewsets
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
-from rest_framework import status, views, generics, mixins, viewsets
 
 from cinema.models import Movie, Genre, Actor, CinemaHall
 from cinema.serializers import (
